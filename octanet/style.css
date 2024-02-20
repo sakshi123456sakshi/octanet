@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: none;
+    outline: none;
+    border: none;
+   
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background:linear-gradient(to top,#0b2057cf,rgba(5, 23, 68, 0.553)),url(./New-Flight-Service-1.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.4rem 1rem;
+    background-color: #01113e;
+}
+
+.navbar .container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 0.3rem;
+}
+.navbar .logo span{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fff;
+ }
+.navbar .logo strong{
+   font-size: 1.4rem;
+   font-weight: 700;
+   color: #7aa2fe;
+}
+.navbar .controls,
+.navbar .navigation{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+   color: #fff;
+}
+
+.navbar .navigation .nav-link{
+    font-size: 1.1rem;
+    font-weight: 300;
+   color: #fff;
+}
+
+.navbar .navigation .nav-link:hover{
+   color: #7aa2fa;
+}
+
+
+.navbar .controls .icon{
+   background-color: #2c3d63;
+   color: #fff;
+   width: 35px;
+   height: 38px;
+   font-size: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.navbar .controls .btn{
+    background-color: #021233;
+    color: #fff;
+    width: fit-content;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0rem 1.4rem;
+    border: 1px solid #1345b1;
+ }
+
+ .navbar .controls .btn:hover{
+    background-color: #0c285f;
+ }
+
+ .navbar .controls .icon:hover{
+    background-color: #020a1a;
+ }
+
+ .header .content{
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0 1rem;
+    padding: 2rem 1rem;
+}
+
+.content .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 1rem;
+   max-width: 900px;
+}
+
+.content .head h1{
+   font-size: 4rem;
+   font-weight: 500;
+   color: #fff;
+   text-align: center;
+}
+
+.content .head .subtitle{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #ccc;
+    text-align: center;
+    padding: 0rem 2rem;
+ }
+
+ .header .booking-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 1rem;
+   max-width: 900px;
+width: 100%;
+   background-color: #ffffff99;
+   padding: 1rem;
+ }
+ .header .booking-box .options{
+   width: 100%;
+   display: grid;
+  align-items: center;
+   grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+   gap: 1rem;
+}
+
+.header .booking-box .options .option{
+   padding: 0.75rem 2rem;
+   background-color: #ffffff99;
+   cursor: pointer;
+}
+
+.header .booking-box .options .option{
+   border:2px solid#fff;
+   padding: 0.75rem 2rem;
+   background-color: #ffffff52;
+   font-size: 0.85rem;
+   font-weight: 500;
+   color: #000d2e;
+}
+.header .booking-box .options .option.active,
+.header .booking-box .options .option:hover{
+   border:2px solid#012062;
+   background-color: #000d2e;
+   color: #fff;
+}
+
+
+ .header .booking-box .form{
+   width: 100%; 
+   background-color: #ffffff99;
+   padding: 1rem 0.5rem;
+}
+.header .booking-box .form .line{
+   width: 100%; 
+   display: grid;
+  align-items: center;
+   grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+   gap: 1rem;
+  
+}
+.header .booking-box .form .line-r{
+   width: 100%; 
+   display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  
+}
+.header .booking-box .form .line-r .btn{
+   background-color: #021233;
+   color: #fff;
+   width: fit-content;
+  
+   font-size: 1rem;
+   line-height: 1rem;
+   font-weight: 500;
+   text-transform: capitalize;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   padding: 0.75rem 2.4rem;
+   border: 1px solid #1345b1;
+}
+
+.header .booking-box .form .line-r .btn:hover{
+   background-color: #0c285f;
+}
+
+
+.header .booking-box .form .box{
+   display: flex;
+   flex-direction: column;
+   padding: 0.75rem 0rem;
+   border-bottom: 5px solid#01113e;
+   color: #fff;
+}
+.header .booking-box .form .box label{
+   padding: 0.2rem;
+   font-size: 0.9rem;
+   font-weight: 400;
+   color:#01113e;
+   text-transform: capitalize;
+ 
+}
+
+
+.header .booking-box .form .box input{
+   width: 100%;
+   padding: 0.75rem 1rem;
+   background-color:#fff;
+   border: 2px solid transparent;
+   color: #012062;
+}
+.header .booking-box .form .box input:hover{
+   width: 100%;
+   padding: 0.75rem 1rem;
+   border:2px solid#012062;
+   
+}
